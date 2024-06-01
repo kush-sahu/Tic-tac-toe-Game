@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Signika+Negative&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+nav{
+    font-size: larger;
+    color: white;
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Signika Negative", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+nav li{
+    list-style: none;
+    font-size: 60px;
+  
+}
+.gamecontaner{
+    font-family: "Signika Negative", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  color: wheat; 
+  height: 90vh;
+  
+ 
+}
+.contaner{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    margin: 17px;
+   
+   
+}
+.box{
+    border: 2px solid white;
+    font-size: 9vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.box:hover{
+    border: 8px solid rgb(252, 249, 249);
+    font-size: 9vw;
+    cursor: pointer;
+    color: rgb(231, 221, 221);
+}
+ .gameinfo{
+    border: 2px solid rgb(202, 202, 202);
+    margin: 44px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    font-weight: bold;
+    color: red;
+    width: 280px;
+    /* background-color: #0cb1f8; */
+    border-radius: 10px
+} 
+
+
+
+.info{
+    font-size: 29.6px;
+    
+    color: white;
+    text-align:end;
+}
+#reset{
+    background-color: aqua;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: aliceblue;
+    color: #000000;
+    font-weight: bold;
+}
+
+@media (max-width:1000px){
+    
+
+    .contaner{
+        
+        grid-template-rows: repeat(3,23vw);
+        grid-template-columns: repeat(3,23vw);
+        margin: 17px;
+        }
+
+    .gameinfo{
+        height: 35vh;
+    }
+
+}
